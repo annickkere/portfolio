@@ -13,7 +13,7 @@ const Footer = () => {
               <b className="text-primary">KERE</b> Annick
             </span>
             <p className="text-sm opacity-90 mt-3">
-                Créatrice de Solutions Digitales Innovantes.
+                Créatrice de Solutions Digitales Innovantes
             </p>
           </div>
 

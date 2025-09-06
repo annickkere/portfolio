@@ -93,7 +93,7 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/80 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
                   <div className="relative p-2 bg-gradient-to-r from-primary to-primary/80 rounded-full">
                     <img
-                      src="/public/profile.jpg"
+                      src="/profile.jpg"
                       alt="KR Annick - Développeuse Full Stack"
                       className="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover object-center border-4 border-background group-hover:scale-105 transition-transform duration-300"
                     />
