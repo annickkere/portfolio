@@ -81,7 +81,7 @@ const Dashboard = () => {
   const handleLogout = () => {
     // Simule une déconnexion puis redirige vers la page de login
     // Ici, tu peux aussi nettoyer ton contexte ou localStorage si besoin
-    navigate('/login', { replace: true });
+    navigate('/admin', { replace: true });
   };
 
   return (

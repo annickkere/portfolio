@@ -49,7 +49,7 @@ const Login = () => {
               Administration
             </CardTitle>
             <p className="text-muted-foreground">
-              Connexion administrateur uniquement
+              Connexion Administrateur
             </p>
           </CardHeader>
           
@@ -63,7 +63,7 @@ const Login = () => {
                 </Alert>
               )}
               
-              <form onSubmit={handleLogin} className="space-y-4 mt-6">
+              <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="login-email">Email</Label>
                   <Input

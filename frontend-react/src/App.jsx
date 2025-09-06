@@ -22,8 +22,8 @@ function App() {
         <Route path="/projects" element={<Projects/>} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact/>} />
-         <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<Dashboard />} />
+         <Route path="/admin" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
