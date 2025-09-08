@@ -20,7 +20,6 @@ const Home = () => {
       backSpeed: 100,
       typeSpeed: 50,
     });
-    // Nettoyage lors du démontage
     return () => typed.destroy();
   }, []);
 

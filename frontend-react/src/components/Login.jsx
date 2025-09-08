@@ -7,6 +7,8 @@ import { AlertCircle, Eye, EyeOff } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import Header from './Header';
 import Footer from './Footer';
+import { useAuth } from '@/context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -17,8 +19,10 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
     setIsLoading(true);
@@ -29,13 +33,15 @@ const Login = () => {
       return;
     }
 
-    // Ici tu peux faire appel à ton API ou autre logique d'authentification
-    // Pour l'instant, on simule juste un délai puis on stop la charge
-    
-    setTimeout(() => {
+    try {
+      await login({ email: loginData.email, password: loginData.password });
+      navigate('/dashboard', { replace: true });
+    } catch (err) {
+      const message = err?.response?.data?.message || 'Identifiants invalides';
+      setError(message);
+    } finally {
       setIsLoading(false);
-      alert('Connexion simulée : email = ' + loginData.email);
-    }, 1000);
+    }
   };
 
   return (

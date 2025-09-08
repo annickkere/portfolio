@@ -7,7 +7,7 @@ import { ArrowLeft, Github, ExternalLink, Calendar } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
 
-// Mock data - à remplacer par des appels API Laravel
+// Mock data
 const mockProjects = [
     {
         id: 1,

@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
-            {/* Formulaire de contact */}
+            {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card>
                 <CardHeader>
